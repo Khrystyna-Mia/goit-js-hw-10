@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["DEBOUNCE_DELAY"],"mappings":";;;AAEA,aAFA,QAAA,oBAEA,MAAMA,EAAiB","file":"src.2b1701c6.js","sourceRoot":"../src","sourcesContent":["import './css/styles.css';\n\nconst DEBOUNCE_DELAY = 300;\n"]}
