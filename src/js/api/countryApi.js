@@ -32,11 +32,11 @@ function findCountryName(evt) {
             }
         /* если в массиве от 2-х до 10-х стран, отображаем список найденных стран */
             else if (amount >= 2 && amount <= 10) {
-                renderCountriesInfo(data);
+                renderCountriesList(data);
             }
         /* если массив с 1 страной, то отображаются данные этой страны */
             else if (amount === 1) {
-                renderCountriesList(data);
+                 renderCountriesInfo(data);
             }
         })
         .catch(onFetchError);
@@ -45,7 +45,7 @@ function findCountryName(evt) {
 function onFetchError(error) {
     console.log(error);
 
-    if (countryName === '') {
+    if (countryName !== '') {
         Notify.failure(`😱 Oops, there is no country with that name`);
     }
 }
