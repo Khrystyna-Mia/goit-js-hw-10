@@ -3,7 +3,7 @@
 <div class="card">
     <div class="card-box">
         <img class="card-flag" src="{{flags.png}}" alt="{{name.common}}" width="120" height="100">
-        <h2 class="card-title">{{name.common}}</h2>
+        <h2 class="card-title">{{name.official}}</h2>
     </div>
 
     <div class="card-body">
@@ -11,6 +11,7 @@
         <p><b>Population:</b> {{population}} </p>
         <p><b>Languages:</b>
         {{#each languages}}{{#if @index}},{{/if}} {{this}}{{/each}}
+        {{!-- {{#each languages}}{{#if @index}}{{this}}{{else}}{{this}},{{/if}}{{/each}} --}}
         </p>
     </div>
 </div>
